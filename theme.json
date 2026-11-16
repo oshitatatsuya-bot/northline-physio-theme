@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1120px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "bg",
+          "color": "#FFF8F0",
+          "name": "Background"
+        },
+        {
+          "slug": "fg",
+          "color": "#2B2B2B",
+          "name": "Text"
+        },
+        {
+          "slug": "muted",
+          "color": "#7A6E64",
+          "name": "Muted"
+        },
+        {
+          "slug": "accent",
+          "color": "#D36B2C",
+          "name": "Accent"
+        },
+        {
+          "slug": "accent-fg",
+          "color": "#FFFFFF",
+          "name": "Accent text"
+        },
+        {
+          "slug": "surface",
+          "color": "#FFF1E4",
+          "name": "Surface"
+        },
+        {
+          "slug": "border",
+          "color": "#E8D8C8",
+          "name": "Border"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "heading",
+          "fontFamily": "\"DM Serif Display\", serif",
+          "name": "DM Serif Display"
+        },
+        {
+          "slug": "body",
+          "fontFamily": "\"Source Sans 3\", sans-serif",
+          "name": "Source Sans 3"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--bg)",
+      "text": "var(--wp--preset--color--fg)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--accent)",
+          "text": "var(--wp--preset--color--accent-fg)"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "vibepress-canvas",
+      "title": "VibePress full-width page",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}
